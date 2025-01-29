@@ -20,7 +20,7 @@ public class CandidatoService {
 	@Inject
     private GestionCandidato gCandidatos;
 
-    // Crear un nuevo usuario
+    
     @POST
     @Produces("application/json")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -35,7 +35,7 @@ public class CandidatoService {
         }
     }
 
-    // Obtener usuario por cédula
+    
     @GET
     @Path("/{cedula}")
     @Produces("application/json")
@@ -49,7 +49,7 @@ public class CandidatoService {
         }
     }
 
-    // Actualizar usuario
+    
     @PUT
     @Path("/{cedula}")
     @Produces("application/json")
@@ -67,7 +67,7 @@ public class CandidatoService {
         }
     }
 
-    // Eliminar usuario
+
     @DELETE
     @Path("/{cedula}")
     @Produces("application/json")
@@ -82,7 +82,7 @@ public class CandidatoService {
         }
     }
 
-    // Listar todos los usuarios
+
     @GET
     @Produces("application/json")
     public Response listar() {
